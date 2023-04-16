@@ -1,0 +1,12 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+section div{
+    height: 50px;
+}
+section div:first-of-type,section div:nth-of-type(2),section div:nth-of-type(3){
+    grid-column: 1/span 4;
+    row-gap: 20px;
+}
